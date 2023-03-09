@@ -1,4 +1,4 @@
-﻿@page
+@page
 @model Mission09_edemaere.Pages.PurchaseModel
 @{
 }
@@ -18,13 +18,13 @@
     <tbody>
         @foreach (var i in Model.cart.Items)
         {
-        <tr>
-            <td>@i.Book.Title</td>
-            <td>@i.Quantity</td>
-            <td>@i.Book.Price</td>
-            <td>@(i.Quantity * i.Book.Price)</td>
-  
-          </tr>
+            <tr>
+                <td>@i.Book.Title</td>
+                <td>@i.Quantity</td>
+                <td>@i.Book.Price</td>
+                <td>@(i.Quantity * i.Book.Price)</td>
+
+            </tr>
         }
     </tbody>
 
